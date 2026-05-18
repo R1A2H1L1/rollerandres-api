@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: rollerandres-api
+
+  r2dbc:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  flyway:
+    url: ${DB_DIRECT_URL}
+    user: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    baseline-version: 0
+
+server:
+  port: ${PORT:8080}
