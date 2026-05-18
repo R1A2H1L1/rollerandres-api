@@ -16,7 +16,8 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(List.of(
                 "http://localhost:3000",
-                "https://rollerandres.dev"
+                "https://rollerandres.dev",
+                "https://www.rollerandres.dev"
         ));
         config.setAllowedMethods(List.of("GET", "PUT", "POST", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
